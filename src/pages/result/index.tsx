@@ -34,12 +34,12 @@ const DetailsInnerContainer = styled(Container)({
 const Image = styled("img")({
   width: "100%",
   minWidth: "150px",
-  maxWidth: "250px",
-
-  aspectRatio: "1/1",
+  maxWidth: "350px",
+  objectFit: "contain",
+  aspectRatio: "16/9",
   background:
-    "linear-gradient(white, white) padding-box,linear-gradient(to right, red, purple) border-box",
-  borderRadius: "10px",
+    "linear-gradient(to right, red, purple)",
+  borderRadius: "15px",
   border: "2px solid transparent",
 });
 
