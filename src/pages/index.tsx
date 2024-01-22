@@ -1,4 +1,5 @@
-import PageHead from "@/components/PageHead";
+import PageHead from "@/components/PageHead"
+import Image from 'next/image'
 import {
   Container as MuiContainer,
   Divider,
@@ -38,7 +39,18 @@ export default function Home() {
         title="Home"
         description="Home of the Youtube-DL Web interface"
       />
-      <Paper component="form" method="get" action="/result">
+      <Image
+        src="/yt_dlp.png"
+        width={200}
+        height={200}
+        alt="yt_dlp"
+      />
+      <Paper component="form" method="get" action="/result"
+        sx={{
+          position: 'relative',
+          top: '-150px'
+        }}
+      >
         <InputBase
           autoComplete="off"
           name="url"
@@ -57,6 +69,7 @@ export default function Home() {
           <SearchOutlined />
         </IconButton>
       </Paper>
+      
     </Container>
   );
 }
